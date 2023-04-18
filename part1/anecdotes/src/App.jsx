@@ -34,21 +34,6 @@ const App = () => {
 
   const indexOfMaxVote = vote.reduce((currentMaxIndex, x, index, a) => x > a[currentMaxIndex] ? index : currentMaxIndex, 0);
 
-  // Math.max(...vote)
-
-  // const findIndicesOfMax = (arr, maxNum) => {
-  //   let indices = []
-  //   let j = 0
-  //
-  //   for (let i = 0; i < arr.length; i++) {
-  //     if (arr[i] == maxNum) indices[j++] = i
-  //   }
-  //   return indices
-  // }
-
-  // let indexOfMaxVote = vote.reduce((a, b, i) => a[0] < b ? [b, i] : a, [Number.MIN_VALUE,-1])[1];
-
-
   return (
     <div>
       <h2>Anecdote of the day</h2>
