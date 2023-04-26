@@ -12,7 +12,7 @@ app.use(express.json())
 app.use(cors)
 
 // Use built-in express middleware for serving static content (index.html, js, etc.) - each GET request, express will look in 'build' dir for relevant files
-app.use(express.static('dist'))
+app.use(express.static('build'))
 
 // Create a token to print body of request (also uses json-parser)
 morgan.token('body', (request) => {
